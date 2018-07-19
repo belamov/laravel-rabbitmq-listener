@@ -1,0 +1,26 @@
+{
+  "name": "belamov/laravel-rabbitmq-listener",
+  "description": "This package allows you to listen RabbitMQ events via artisan command",
+  "type": "package",
+  "require": {
+    "php-amqplib/php-amqplib": "^2.7"
+  },
+  "authors": [
+    {
+      "name": "Dmitry Belamov",
+      "email": "dmitry@belamov.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Belamov\\RabbitMQListener\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Belamov\\RabbitMQListener\\RabbitMQListenerServiceProvider"
+      ]
+    }
+  }
+}
